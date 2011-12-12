@@ -1,0 +1,9 @@
+== Installation notes ==
+
+Download and install deal.II (version 6.3.1 is sure to be compatible).
+
+In the makefile:
+--Set variable "DEALIIdir" to the top directory of the deal.II installation.
+--As you see, the rule for "shared_lib_export" uses the "export" command.
+  If your distribution does not support "export", replace accordingly.
+  (It should work on Debian-based systems.)
